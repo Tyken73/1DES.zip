@@ -1,0 +1,87 @@
+.contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: calc(100vh - 9.5rem);
+}
+
+.livroImg{
+    width: clamp(4em, 4em + 12vw, 20em);
+    margin-right: 5vw;
+}
+
+.contatoBox{
+    background-color: rgb(220, 220, 220);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.contatoItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.contatoImg{
+    height: 4rem;
+}
+
+.contatoConteudo{
+    font-size: 1.25rem;
+    text-decoration: none;
+    position: relative;
+    left: 1rem;
+}
+
+.link{
+    cursor: pointer;
+}
+
+p{
+    display: inline-block;
+}
+
+.ImgIcone{
+    filter: invert(0);
+}
+
+@media(max-width: 1000px){
+    .livroImg{
+        display: none;
+    }
+
+    .contato{
+        padding: 2rem;
+    }
+
+}
+
+@media(max-width: 500px){
+    .contato{
+
+    }
+
+    .contatoBox{
+        padding: 1.5rem 1rem;
+        border-radius: 0.75rem;
+    }
+
+    .contatoItem{
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .contatoImg{
+        height: 3rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contatoConteudo{
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        left: 0;
+    }
+}

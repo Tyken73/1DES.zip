@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/menu-rodape.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/menu.js"></script>
+</head>
+
+<body id="body">
+    <header id="header">
+        <a href="index.html"><img src="img/logo.png" alt="" id="logo"></a>
+        <div class="nome">1DES.zip</div>
+
+        <nav id="nav">
+            <button id="btn-mobile" onclick="toggleMenu()">
+                <span id="hamb"></span>
+            </button>
+            <ul id="menu">
+
+                <div class="dropdown">
+                    <li> <a href="manual.html">Manual de Sobrevivência</a></li>
+                    <div id="dropdown-content">
+                        <a id="topmenudropdown"></a>
+                        <a style="background-color: white;" href="dicas.html">Dicas</a>
+                        <a style="background-color: white;" href="sistema-avaliativo.html">Sistema avaliativo</a>
+                        <a style="background-color: white;" href="metodologias.html">Metodologias de estudo</a>
+                    </div>
+                </div>
+
+                <li> <a href="http://etecperuibe.com.br/wp-content/uploads/2022/07/Desenvolvimento-de-Sistemas-612_MTec-PI_1a-Serie_versao-provisoria_11-07-22-Plano-Novo.pdf" target="_blank">Plano de Curso</a></li>
+                <li> <a href="http://etecperuibe.com.br/" target="_blank">Saiba Mais</a></li>
+                <li> <a href="contato.html">Contato</a></li>
+                <li> 
+                    <img id="darkmodeicon" src="img/darkmode.png" href="#dark" onclick="trocadecor()"></img>
+                    <a id="darkmodetext" href="#dark" onclick="trocadecor()">Dark Mode</a>
+                </li>
+                <li id="empty-item"> <a></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="video">
+        <iframe  width="600" height="400" src="https://www.youtube.com/embed/5OkKUh2cEWk" frameborder="0" allowfullscreen></iframe>
+        <div class="texto">
+            <p>Bem vindos ao 1DES.zip, um projeto desenvolvido pelos alunos do 1DES de 2022 para auxiliar os novos alunos da Etec. Nesse site vocês irão encontrar algumas dicas, nossa metodologia de estudo, como funciona a escola, entre outros. Além desse texto apresentando o site, temos também um vídeo gravado pela nossa sala com alguns pontos importantes como regras gerais, eventos e trabalhos.
+            <br><br>
+            <h2>Sejam bem vindos a Etec de Peruíbe!</h2></p>
+        </div>
+    </section> 
+    <footer id="rodape">
+        <a>&copy; 1°DES 2022</a>
+    </footer>
+</body>
+</html>

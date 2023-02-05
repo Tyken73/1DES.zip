@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual de Sobrevivência</title>
+
+    <link rel="stylesheet" href="css/manual.css">
+    <link rel="stylesheet" type="text/css" href="css/menu-rodape.css">
+    <script src="js/menu.js"></script>
+</head>
+<body id="body">
+    <header id="header">
+        <a href="index.html"><img src="img/logo.png" alt="" id="logo"></a>
+        <div class="nome">1DES.zip</div>
+
+        <nav id="nav">
+            <button id="btn-mobile" onclick="toggleMenu()">
+                <span id="hamb"></span>
+            </button>
+            <ul id="menu">
+
+                <div class="dropdown">
+                    <li> <a href="manual.html">Manual de Sobrevivência</a></li>
+                    <div id="dropdown-content">
+                        <a id="topmenudropdown"></a>
+                        <a style="background-color: white;" href="dicas.html">Dicas</a>
+                        <a style="background-color: white;" href="sistema-avaliativo.html">Sistema avaliativo</a>
+                        <a style="background-color: white;" href="metodologias.html">Metodologias de estudo</a>
+                    </div>
+                </div>
+
+                <li> <a href="http://etecperuibe.com.br/wp-content/uploads/2022/07/Desenvolvimento-de-Sistemas-612_MTec-PI_1a-Serie_versao-provisoria_11-07-22-Plano-Novo.pdf" target="_blank">Plano de Curso</a></li>
+                <li> <a href="http://etecperuibe.com.br/" target="_blank">Saiba Mais</a></li>
+                <li> <a href="contato.html">Contato</a></li>
+                <li> 
+                    <img id="darkmodeicon" src="img/darkmode.png" href="#dark" onclick="trocadecor()"></img>
+                    <a id="darkmodetext" href="#dark" onclick="trocadecor()">Dark Mode</a>
+                </li>
+                <li id="empty-item"> <a></a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <section class="flexbox">
+        <div>
+             <img class="img-g">
+             <p><b>MANUAL DE <i> SOBREVIVÊNCIA</i></b></p>
+        </div>
+
+        <div>
+            <a href="dicas.html" class="btn3 btn-back-slide"><img src="img/hiny.png"> DICAS</a>
+        </div>
+
+        <div>
+            <a href="sistema-avaliativo.html" class="btn3 btn-back-slide"><img src="img/sistema.png"> SISTEMA AVALIATIVO</a>
+        </div>
+
+        <div>
+            <a href="metodologias.html" class="btn3 btn-back-slide"><img src="img/metodologia.png">   METODOLOGIAS</a>
+        </div>
+    </section>
+
+    <br><br><br><br><br><br>
+
+    <footer id="rodape">
+        <a id="text">&copy; 1°DES/Turma 2022</a>  
+    </footer>
+</body>
+</html>
+
