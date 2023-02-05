@@ -1,0 +1,62 @@
+/*Video e texto*/
+.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: calc(100vh - 9.5rem);
+    padding: 8rem;
+}
+
+iframe{
+    float: left;
+    height: 100%;
+    width: auto;
+    aspect-ratio: 16/9;
+    margin-right: 4rem;
+}
+
+.texto {
+    font-size: 1.2rem;
+    text-align: justify;
+    align-self: flex-start;
+ }
+
+@media(max-width: 1300px){
+    .video{
+        flex-direction: column;
+        padding: 4rem;
+    }
+    .texto{
+        margin-top: 2rem;
+    }
+    iframe{
+        margin: 0;
+    }
+}
+
+/*Responsividade*/
+@media(max-width: 500px){
+    .video{
+        padding: 2rem;
+    }
+    .texto{
+        font-size: 1rem;
+    }
+    iframe{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-width: 300px){
+    .video{
+        padding: 1rem;
+    }
+}
+
+/*Texto com gradiente*/
+h2{
+    background: -webkit-linear-gradient(90deg, rgba(64,59,142,1) 0%, rgba(175,121,167,1) 100%, rgba(0,212,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; text-align: center;
+}
